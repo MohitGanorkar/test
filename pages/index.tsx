@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-var test_variable = process.env.NEXT_PUBLIC_TEST_VARIABLE
+var test_variable = process.env.NEXT_PUBLIC_TEST_VARIABLE?.toString()
 console.log(test_variable);
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to NEXT_PUBLIC_TEST_VARIABLE <a href="https://nextjs.org">Next.js!</a>
+          Welcome to {test_variable} <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className={styles.description}>
