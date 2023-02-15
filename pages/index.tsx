@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 var test_variable = process.env.NEXT_PUBLIC_TEST_VARIABLE
-
+console.log(test_variable);
 export default function Home() {
   return (
     <div className={styles.container}>
