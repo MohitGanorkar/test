@@ -15,7 +15,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to {test_variable} <a href="https://nextjs.org">Next.js!</a>
+          Welcome to {process.env.NEXT_PUBLIC_TEST_VARIABLE} <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className={styles.description}>
